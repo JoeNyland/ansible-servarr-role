@@ -1,0 +1,10 @@
+---
+- name: Reload systemd
+  systemd:
+    daemon_reload: true
+- name: Restart servarr services
+  systemd:
+    name: "{{ item }}"
+    state: restarted
+  with_items: "{{ servarr_apps.keys() }}"
+  when: servarr_service_enabled

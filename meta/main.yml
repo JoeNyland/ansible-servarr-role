@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: Joe Nyland
+  role_name: servarr
+  namespace: joenyland
+  description: Installs Servarr apps
+  license: MIT
+  min_ansible_version: '2.1'
+  platforms:
+  - name: Debian
+    versions:
+      - bookworm
+  galaxy_tags:
+    - servarr
+    - sonarr
+    - radarr
+    - lidarr
+dependencies: []
