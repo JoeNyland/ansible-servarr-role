@@ -17,7 +17,6 @@
         groups: servarr
         append: true
       with_items: "{{ servarr_group_users }}"
-      notify: Restart servarr services
     - name: Install dependencies
       apt:
         name:
